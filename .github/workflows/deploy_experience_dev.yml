@@ -13,6 +13,8 @@ jobs:
         with:
           node-version: lts/*
 
+      - run: npm install
+
       - name: Deploy to Firebase
         uses: w9jds/firebase-action@master
         with:
