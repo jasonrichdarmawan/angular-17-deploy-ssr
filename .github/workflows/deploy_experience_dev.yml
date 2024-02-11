@@ -22,6 +22,7 @@ jobs:
         with:
           args: deploy
         env:
+          FIREBASE_FRAMEWORKS_BUILD_TARGET: experience:build:production
           FIREBASE_CLI_EXPERIMENTS: webframeworks
           GCP_SA_KEY: ${{ secrets.GCP_SA_KEY_TO_POINT_ORG }}
 
