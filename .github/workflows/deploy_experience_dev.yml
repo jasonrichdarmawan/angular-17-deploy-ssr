@@ -17,13 +17,11 @@ jobs:
 
       - run: npx ng build experience
 
-      - name: Enable webframeworks
-        run: npx firebase experiments:enable webframeworks
-
       - name: Deploy to Firebase
         uses: w9jds/firebase-action@master
         with:
           args: deploy
         env:
+          FIREBASE_CLI_EXPERIMENTS: webframeworks
           GCP_SA_KEY: ${{ secrets.GCP_SA_KEY_TO_POINT_ORG }}
 
