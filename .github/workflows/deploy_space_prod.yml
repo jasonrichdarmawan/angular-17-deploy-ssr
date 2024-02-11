@@ -1,8 +1,8 @@
-name: deploy experience to dev
+name: deploy space to prod
 on:
   push:
     tags:
-      - deploy/experience/dev/v*
+      - deploy/space/prod/v*
 jobs:
   deploy:
     runs-on: ubuntu-latest
@@ -18,10 +18,10 @@ jobs:
       - name: Deploy to Firebase
         uses: w9jds/firebase-action@master
         with:
-          args: deploy --only hosting:experience
+          args: deploy --only hosting:space
         env:
-          FIREBASE_FRAMEWORKS_BUILD_TARGET: experience:build:production
+          FIREBASE_FRAMEWORKS_BUILD_TARGET: space:build:production
           FIREBASE_CLI_EXPERIMENTS: webframeworks
           GCP_SA_KEY: ${{ secrets.GCP_SA_KEY_TO_POINT_ORG }}
-          PROJECT_ID: topoint-org
+          PROJECT_ID: topoint-org-prod
 

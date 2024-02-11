@@ -9,6 +9,16 @@
           "topoint-space-dev"
         ]
       }
+    },
+    "topoint-org-prod": {
+      "hosting": {
+        "experience": [
+          "topoint-experience-prod"
+        ],
+        "space": [
+          "topoint-space-prod"
+        ]
+      }
     }
   },
   "projects": {
