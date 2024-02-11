@@ -10,7 +10,7 @@
         ]
       }
     },
-    "topoint-org-prod": {
+    "topoint-prod": {
       "hosting": {
         "experience": [
           "topoint-experience-prod"
