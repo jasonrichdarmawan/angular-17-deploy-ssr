@@ -6,6 +6,13 @@
       "frameworksBackend": {
         "region": "asia-east1"
       }
+    },
+    {
+      "target": "space",
+      "source": ".",
+      "frameworksBackend": {
+        "region": "asia-east1"
+      }
     }
   ]
 }

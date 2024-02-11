@@ -2,8 +2,8 @@
   "targets": {
     "topoint-org": {
       "hosting": {
-        "experience": [
-          "topoint-experience-dev"
+        "space": [
+          "topoint-space-dev"
         ]
       }
     }
