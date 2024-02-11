@@ -1,0 +1,11 @@
+{
+  "hosting": [
+    {
+      "target": "experience",
+      "source": ".",
+      "frameworksBackend": {
+        "region": "asia-east1"
+      }
+    }
+  ]
+}

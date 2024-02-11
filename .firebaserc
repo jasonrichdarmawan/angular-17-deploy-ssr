@@ -1,0 +1,14 @@
+{
+  "targets": {
+    "topoint-org": {
+      "hosting": {
+        "experience": [
+          "topoint-experience-dev"
+        ]
+      }
+    }
+  },
+  "projects": {
+    "default": "topoint-org"
+  }
+}
