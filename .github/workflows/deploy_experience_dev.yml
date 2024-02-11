@@ -1,0 +1,26 @@
+name: deploy experience to dev
+on:
+  push:
+    tags:
+      - deploy/experience/dev/v*
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: "lts"
+
+      - run: npm install
+
+      - run: ng build experience
+
+      - name: Deploy to Firebase
+        uses: w9jds/firebase-action@master
+        with:
+          args: deploy
+        env:
+          GCP_SA_KEY: ${{ secrets.GCP_SA_KEY_TO_POINT_ORG }}
+
