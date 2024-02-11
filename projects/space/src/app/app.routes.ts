@@ -7,7 +7,7 @@ export const routes: Routes = [
         redirectTo: 'experience',
     },
     {
-        path: 'experience',
-        loadChildren: () => import("./feat/experience/experience.module").then(m => m.ExperienceModule),
-    },
+        path: 'space',
+        loadChildren: () => import("./feat/space/space.module").then(m => m.SpaceModule),
+    }
 ];
