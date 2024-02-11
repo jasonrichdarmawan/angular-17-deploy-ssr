@@ -15,7 +15,7 @@ jobs:
 
       - run: npm install
 
-      - run: ng build experience
+      - run: npx ng build experience
 
       - name: Deploy to Firebase
         uses: w9jds/firebase-action@master
