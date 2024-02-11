@@ -22,6 +22,6 @@ jobs:
         env:
           FIREBASE_FRAMEWORKS_BUILD_TARGET: space:build:production
           FIREBASE_CLI_EXPERIMENTS: webframeworks
-          GCP_SA_KEY: ${{ secrets.GCP_SA_KEY_TO_POINT_ORG }}
+          GCP_SA_KEY: ${{ secrets.GCP_SA_KEY_TO_POINT_ORG_PROD }}
           PROJECT_ID: topoint-org-prod
 
