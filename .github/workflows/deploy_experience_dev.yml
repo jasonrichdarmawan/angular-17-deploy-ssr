@@ -15,12 +15,10 @@ jobs:
 
       - run: npm install
 
-      - run: npx ng build experience
-
       - name: Deploy to Firebase
         uses: w9jds/firebase-action@master
         with:
-          args: deploy
+          args: deploy --only hosting:experience
         env:
           FIREBASE_FRAMEWORKS_BUILD_TARGET: experience:build:production
           FIREBASE_CLI_EXPERIMENTS: webframeworks
