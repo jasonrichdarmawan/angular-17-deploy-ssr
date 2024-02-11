@@ -18,7 +18,7 @@ jobs:
       - run: npx ng build experience
 
       - name: Enable webframeworks
-        uses: npx firebase experiments:enable webframeworks
+        run: npx firebase experiments:enable webframeworks
 
       - name: Deploy to Firebase
         uses: w9jds/firebase-action@master
