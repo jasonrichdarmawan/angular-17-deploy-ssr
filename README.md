@@ -1,3 +1,10 @@
+# How to deploy
+
+```
+$ FIREBASE_FRAMEWORKS_BUILD_TARGET="experience:build:production" npx ng deploy experience
+$ FIREBASE_FRAMEWORKS_BUILD_TARGET="space:build:production" npx ng deploy space
+```
+
 # Angular17DeploySsr
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 17.0.8.
